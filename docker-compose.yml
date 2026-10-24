@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  uav-simulation:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./results:/app/results
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: ["--uavs", "20", "--tasks", "50", "--fps", "20", "--save-video", "results/uav_simulation_3d_isometric.mp4"]

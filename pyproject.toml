@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "uav-allocation"
+version = "0.1.0"
+description = "Decentralized UAV dynamic task allocation using communication-aware GNN + MAPPO"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+  { name = "UAV Allocation Team" }
+]
+requires-python = ">=3.9"
+dependencies = [
+  "torch>=2.2",
+  "numpy>=1.26",
+  "scipy>=1.11",
+  "pandas>=2.1",
+  "networkx>=3.2",
+  "matplotlib>=3.8",
+  "pyyaml>=6.0",
+  "gymnasium>=0.29",
+  "tensorboard>=2.15",
+  "pillow>=10.0",
+  "imageio>=2.30",
+  "imageio-ffmpeg>=0.4",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "black>=23.0",
+  "ruff>=0.1.0",
+]
+
+[project.scripts]
+uav-sim = "uav_allocation.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-q"

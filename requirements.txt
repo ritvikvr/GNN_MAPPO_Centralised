@@ -1,0 +1,13 @@
+# Tested with Python 3.13 / torch 2.14 (CPU+CUDA wheels), and written to run on Python >=3.10 (Colab default).
+# On Colab, torch is preinstalled: `pip install -r requirements.txt` will keep it if the range is satisfied.
+torch>=2.2,<3
+numpy>=1.26,<3
+scipy>=1.11,<2
+pandas>=2.1,<4
+networkx>=3.2,<4
+matplotlib>=3.8,<4
+pyyaml>=6.0,<7
+gymnasium>=0.29,<2
+tensorboard>=2.15,<3
+pytest>=8.0,<10
+pillow>=10.0
