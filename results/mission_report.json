@@ -1,0 +1,728 @@
+{
+  "method": "gnn_mappo",
+  "n_uavs": 20,
+  "total_tasks": 50,
+  "completed_count": 46,
+  "expired_count": 3,
+  "in_progress_count": 0,
+  "weighted_completion_rate": 0.9242424242424242,
+  "total_completion_rate": 0.92,
+  "energy_consumed": 528.2877181330807,
+  "makespan_steps": 271.0,
+  "reservation_latency": 3.0,
+  "all_tasks_completed": false,
+  "task_ledger": [
+    {
+      "task_id": 0,
+      "priority": 3,
+      "agent": 14,
+      "status": "COMPLETED",
+      "completed_at": 43,
+      "pos": [
+        950.8,
+        957.5
+      ]
+    },
+    {
+      "task_id": 1,
+      "priority": 3,
+      "agent": 2,
+      "status": "COMPLETED",
+      "completed_at": 46,
+      "pos": [
+        500.4,
+        276.5
+      ]
+    },
+    {
+      "task_id": 2,
+      "priority": 4,
+      "agent": 17,
+      "status": "COMPLETED",
+      "completed_at": 28,
+      "pos": [
+        131.7,
+        285.7
+      ]
+    },
+    {
+      "task_id": 3,
+      "priority": 2,
+      "agent": 11,
+      "status": "COMPLETED",
+      "completed_at": 43,
+      "pos": [
+        39.7,
+        600.7
+      ]
+    },
+    {
+      "task_id": 4,
+      "priority": 2,
+      "agent": 7,
+      "status": "COMPLETED",
+      "completed_at": 73,
+      "pos": [
+        514.9,
+        92.7
+      ]
+    },
+    {
+      "task_id": 5,
+      "priority": 2,
+      "agent": 8,
+      "status": "COMPLETED",
+      "completed_at": 52,
+      "pos": [
+        702.3,
+        668.2
+      ]
+    },
+    {
+      "task_id": 6,
+      "priority": 1,
+      "agent": 2,
+      "status": "COMPLETED",
+      "completed_at": 71,
+      "pos": [
+        539.8,
+        267.9
+      ]
+    },
+    {
+      "task_id": 7,
+      "priority": 2,
+      "agent": 5,
+      "status": "COMPLETED",
+      "completed_at": 62,
+      "pos": [
+        599.8,
+        983.5
+      ]
+    },
+    {
+      "task_id": 8,
+      "priority": 1,
+      "agent": 13,
+      "status": "COMPLETED",
+      "completed_at": 35,
+      "pos": [
+        783.4,
+        274.0
+      ]
+    },
+    {
+      "task_id": 9,
+      "priority": 1,
+      "agent": 18,
+      "status": "COMPLETED",
+      "completed_at": 58,
+      "pos": [
+        472.6,
+        592.2
+      ]
+    },
+    {
+      "task_id": 10,
+      "priority": 1,
+      "agent": 17,
+      "status": "COMPLETED",
+      "completed_at": 63,
+      "pos": [
+        406.7,
+        325.9
+      ]
+    },
+    {
+      "task_id": 11,
+      "priority": 5,
+      "agent": 0,
+      "status": "COMPLETED",
+      "completed_at": 36,
+      "pos": [
+        109.1,
+        665.1
+      ]
+    },
+    {
+      "task_id": 12,
+      "priority": 1,
+      "agent": 9,
+      "status": "COMPLETED",
+      "completed_at": 84,
+      "pos": [
+        374.8,
+        830.1
+      ]
+    },
+    {
+      "task_id": 13,
+      "priority": 3,
+      "agent": 19,
+      "status": "COMPLETED",
+      "completed_at": 60,
+      "pos": [
+        711.3,
+        108.8
+      ]
+    },
+    {
+      "task_id": 14,
+      "priority": 3,
+      "agent": 16,
+      "status": "COMPLETED",
+      "completed_at": 82,
+      "pos": [
+        445.5,
+        957.8
+      ]
+    },
+    {
+      "task_id": 15,
+      "priority": 4,
+      "agent": 12,
+      "status": "COMPLETED",
+      "completed_at": 38,
+      "pos": [
+        905.0,
+        873.7
+      ]
+    },
+    {
+      "task_id": 16,
+      "priority": 2,
+      "agent": 13,
+      "status": "COMPLETED",
+      "completed_at": 66,
+      "pos": [
+        724.9,
+        246.6
+      ]
+    },
+    {
+      "task_id": 17,
+      "priority": 5,
+      "agent": 1,
+      "status": "COMPLETED",
+      "completed_at": 36,
+      "pos": [
+        45.8,
+        364.5
+      ]
+    },
+    {
+      "task_id": 18,
+      "priority": 2,
+      "agent": 3,
+      "status": "COMPLETED",
+      "completed_at": 22,
+      "pos": [
+        116.7,
+        446.7
+      ]
+    },
+    {
+      "task_id": 19,
+      "priority": 3,
+      "agent": 6,
+      "status": "COMPLETED",
+      "completed_at": 24,
+      "pos": [
+        273.6,
+        575.4
+      ]
+    },
+    {
+      "task_id": 20,
+      "priority": 3,
+      "agent": 0,
+      "status": "COMPLETED",
+      "completed_at": 80,
+      "pos": [
+        403.0,
+        941.2
+      ]
+    },
+    {
+      "task_id": 21,
+      "priority": 3,
+      "agent": 9,
+      "status": "COMPLETED",
+      "completed_at": 45,
+      "pos": [
+        89.8,
+        641.2
+      ]
+    },
+    {
+      "task_id": 22,
+      "priority": 3,
+      "agent": 3,
+      "status": "COMPLETED",
+      "completed_at": 63,
+      "pos": [
+        371.8,
+        93.0
+      ]
+    },
+    {
+      "task_id": 23,
+      "priority": 2,
+      "agent": 6,
+      "status": "COMPLETED",
+      "completed_at": 62,
+      "pos": [
+        563.0,
+        448.0
+      ]
+    },
+    {
+      "task_id": 24,
+      "priority": 1,
+      "agent": 4,
+      "status": "COMPLETED",
+      "completed_at": 88,
+      "pos": [
+        238.8,
+        874.2
+      ]
+    },
+    {
+      "task_id": 25,
+      "priority": 3,
+      "agent": 10,
+      "status": "COMPLETED",
+      "completed_at": 71,
+      "pos": [
+        679.7,
+        553.0
+      ]
+    },
+    {
+      "task_id": 26,
+      "priority": 4,
+      "agent": 1,
+      "status": "COMPLETED",
+      "completed_at": 76,
+      "pos": [
+        140.5,
+        489.4
+      ]
+    },
+    {
+      "task_id": 27,
+      "priority": 5,
+      "agent": 15,
+      "status": "COMPLETED",
+      "completed_at": 81,
+      "pos": [
+        898.4,
+        71.3
+      ]
+    },
+    {
+      "task_id": 28,
+      "priority": 1,
+      "agent": 19,
+      "status": "COMPLETED",
+      "completed_at": 97,
+      "pos": [
+        493.7,
+        88.0
+      ]
+    },
+    {
+      "task_id": 29,
+      "priority": 2,
+      "agent": 18,
+      "status": "COMPLETED",
+      "completed_at": 95,
+      "pos": [
+        281.7,
+        914.1
+      ]
+    },
+    {
+      "task_id": 30,
+      "priority": 3,
+      "agent": 11,
+      "status": "COMPLETED",
+      "completed_at": 87,
+      "pos": [
+        52.8,
+        676.9
+      ]
+    },
+    {
+      "task_id": 31,
+      "priority": 2,
+      "agent": 8,
+      "status": "COMPLETED",
+      "completed_at": 131,
+      "pos": [
+        318.5,
+        241.8
+      ]
+    },
+    {
+      "task_id": 32,
+      "priority": 1,
+      "agent": 1,
+      "status": "COMPLETED",
+      "completed_at": 129,
+      "pos": [
+        54.8,
+        82.7
+      ]
+    },
+    {
+      "task_id": 33,
+      "priority": 4,
+      "agent": 17,
+      "status": "COMPLETED",
+      "completed_at": 122,
+      "pos": [
+        437.9,
+        49.3
+      ]
+    },
+    {
+      "task_id": 34,
+      "priority": 2,
+      "agent": 3,
+      "status": "COMPLETED",
+      "completed_at": 113,
+      "pos": [
+        234.4,
+        324.9
+      ]
+    },
+    {
+      "task_id": 35,
+      "priority": 1,
+      "agent": 10,
+      "status": "COMPLETED",
+      "completed_at": 158,
+      "pos": [
+        330.3,
+        375.5
+      ]
+    },
+    {
+      "task_id": 36,
+      "priority": 5,
+      "agent": 12,
+      "status": "COMPLETED",
+      "completed_at": 149,
+      "pos": [
+        951.9,
+        600.5
+      ]
+    },
+    {
+      "task_id": 37,
+      "priority": 1,
+      "agent": -1,
+      "status": "EXPIRED",
+      "completed_at": -1,
+      "pos": [
+        68.4,
+        34.2
+      ]
+    },
+    {
+      "task_id": 38,
+      "priority": 2,
+      "agent": 11,
+      "status": "COMPLETED",
+      "completed_at": 141,
+      "pos": [
+        90.3,
+        601.0
+      ]
+    },
+    {
+      "task_id": 39,
+      "priority": 2,
+      "agent": 6,
+      "status": "COMPLETED",
+      "completed_at": 155,
+      "pos": [
+        435.8,
+        457.0
+      ]
+    },
+    {
+      "task_id": 40,
+      "priority": 2,
+      "agent": 2,
+      "status": "COMPLETED",
+      "completed_at": 155,
+      "pos": [
+        567.8,
+        234.9
+      ]
+    },
+    {
+      "task_id": 41,
+      "priority": 3,
+      "agent": 7,
+      "status": "COMPLETED",
+      "completed_at": 226,
+      "pos": [
+        435.1,
+        81.7
+      ]
+    },
+    {
+      "task_id": 42,
+      "priority": 4,
+      "agent": 16,
+      "status": "COMPLETED",
+      "completed_at": 192,
+      "pos": [
+        220.0,
+        775.4
+      ]
+    },
+    {
+      "task_id": 43,
+      "priority": 3,
+      "agent": 1,
+      "status": "COMPLETED",
+      "completed_at": 168,
+      "pos": [
+        3.2,
+        76.6
+      ]
+    },
+    {
+      "task_id": 44,
+      "priority": 5,
+      "agent": 12,
+      "status": "COMPLETED",
+      "completed_at": 191,
+      "pos": [
+        771.1,
+        520.5
+      ]
+    },
+    {
+      "task_id": 45,
+      "priority": 3,
+      "agent": -1,
+      "status": "EXPIRED",
+      "completed_at": -1,
+      "pos": [
+        501.1,
+        36.4
+      ]
+    },
+    {
+      "task_id": 46,
+      "priority": 2,
+      "agent": 5,
+      "status": "COMPLETED",
+      "completed_at": 197,
+      "pos": [
+        385.6,
+        819.6
+      ]
+    },
+    {
+      "task_id": 47,
+      "priority": 4,
+      "agent": -1,
+      "status": "EXPIRED",
+      "completed_at": -1,
+      "pos": [
+        654.8,
+        28.1
+      ]
+    },
+    {
+      "task_id": 48,
+      "priority": 4,
+      "agent": 18,
+      "status": "COMPLETED",
+      "completed_at": 271,
+      "pos": [
+        105.5,
+        6.6
+      ]
+    },
+    {
+      "task_id": 49,
+      "priority": 2,
+      "agent": -1,
+      "status": "PENDING",
+      "completed_at": -1,
+      "pos": [
+        68.5,
+        80.7
+      ]
+    }
+  ],
+  "agent_summary": [
+    {
+      "uav_id": 0,
+      "tasks_completed": 2,
+      "distance_m": 698.0,
+      "energy_used_J": 21.26,
+      "final_battery_pct": 44.8,
+      "cruise_corridor_z_m": 65.0
+    },
+    {
+      "uav_id": 1,
+      "tasks_completed": 4,
+      "distance_m": 1183.0,
+      "energy_used_J": 33.07,
+      "final_battery_pct": 95.0,
+      "cruise_corridor_z_m": 80.0
+    },
+    {
+      "uav_id": 2,
+      "tasks_completed": 3,
+      "distance_m": 940.6,
+      "energy_used_J": 29.24,
+      "final_battery_pct": 95.7,
+      "cruise_corridor_z_m": 95.0
+    },
+    {
+      "uav_id": 3,
+      "tasks_completed": 3,
+      "distance_m": 903.7,
+      "energy_used_J": 24.99,
+      "final_battery_pct": 20.7,
+      "cruise_corridor_z_m": 110.0
+    },
+    {
+      "uav_id": 4,
+      "tasks_completed": 1,
+      "distance_m": 1240.4,
+      "energy_used_J": 28.93,
+      "final_battery_pct": 71.2,
+      "cruise_corridor_z_m": 125.0
+    },
+    {
+      "uav_id": 5,
+      "tasks_completed": 2,
+      "distance_m": 1401.3,
+      "energy_used_J": 31.33,
+      "final_battery_pct": 35.4,
+      "cruise_corridor_z_m": 140.0
+    },
+    {
+      "uav_id": 6,
+      "tasks_completed": 3,
+      "distance_m": 796.3,
+      "energy_used_J": 22.29,
+      "final_battery_pct": 38.2,
+      "cruise_corridor_z_m": 65.0
+    },
+    {
+      "uav_id": 7,
+      "tasks_completed": 2,
+      "distance_m": 1752.0,
+      "energy_used_J": 40.16,
+      "final_battery_pct": 59.8,
+      "cruise_corridor_z_m": 80.0
+    },
+    {
+      "uav_id": 8,
+      "tasks_completed": 2,
+      "distance_m": 863.7,
+      "energy_used_J": 27.42,
+      "final_battery_pct": 33.6,
+      "cruise_corridor_z_m": 95.0
+    },
+    {
+      "uav_id": 9,
+      "tasks_completed": 2,
+      "distance_m": 468.2,
+      "energy_used_J": 17.28,
+      "final_battery_pct": 52.1,
+      "cruise_corridor_z_m": 110.0
+    },
+    {
+      "uav_id": 10,
+      "tasks_completed": 2,
+      "distance_m": 627.7,
+      "energy_used_J": 23.02,
+      "final_battery_pct": 31.9,
+      "cruise_corridor_z_m": 125.0
+    },
+    {
+      "uav_id": 11,
+      "tasks_completed": 3,
+      "distance_m": 323.2,
+      "energy_used_J": 16.02,
+      "final_battery_pct": 56.6,
+      "cruise_corridor_z_m": 140.0
+    },
+    {
+      "uav_id": 12,
+      "tasks_completed": 3,
+      "distance_m": 811.5,
+      "energy_used_J": 24.76,
+      "final_battery_pct": 24.9,
+      "cruise_corridor_z_m": 65.0
+    },
+    {
+      "uav_id": 13,
+      "tasks_completed": 2,
+      "distance_m": 306.5,
+      "energy_used_J": 15.56,
+      "final_battery_pct": 42.8,
+      "cruise_corridor_z_m": 80.0
+    },
+    {
+      "uav_id": 14,
+      "tasks_completed": 1,
+      "distance_m": 436.6,
+      "energy_used_J": 15.07,
+      "final_battery_pct": 58.9,
+      "cruise_corridor_z_m": 95.0
+    },
+    {
+      "uav_id": 15,
+      "tasks_completed": 1,
+      "distance_m": 596.1,
+      "energy_used_J": 18.67,
+      "final_battery_pct": 51.3,
+      "cruise_corridor_z_m": 110.0
+    },
+    {
+      "uav_id": 16,
+      "tasks_completed": 2,
+      "distance_m": 1215.2,
+      "energy_used_J": 29.65,
+      "final_battery_pct": 27.7,
+      "cruise_corridor_z_m": 125.0
+    },
+    {
+      "uav_id": 17,
+      "tasks_completed": 3,
+      "distance_m": 1377.7,
+      "energy_used_J": 32.78,
+      "final_battery_pct": 59.8,
+      "cruise_corridor_z_m": 140.0
+    },
+    {
+      "uav_id": 18,
+      "tasks_completed": 3,
+      "distance_m": 1739.1,
+      "energy_used_J": 44.07,
+      "final_battery_pct": 65.5,
+      "cruise_corridor_z_m": 65.0
+    },
+    {
+      "uav_id": 19,
+      "tasks_completed": 2,
+      "distance_m": 1198.6,
+      "energy_used_J": 32.71,
+      "final_battery_pct": 92.3,
+      "cruise_corridor_z_m": 80.0
+    }
+  ]
+}
