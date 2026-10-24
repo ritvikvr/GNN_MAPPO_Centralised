@@ -1,0 +1,75 @@
+# Default configuration. Every hyper-parameter lives in YAML; code only holds validation logic.
+env:
+  arena: 1000.0            # m, square arena [0, arena]^2
+  n_uavs: 20
+  n_tasks: 80              # total tasks generated per episode
+  horizon: 300             # steps (truncation)
+  dt: 1.0                  # s per step
+  n_bases: 2
+  n_capabilities: 3
+  speed: 15.0              # m/s nominal airspeed
+  speed_hetero: 0.2        # +-fraction of speed heterogeneity
+  capacity: 40.0           # energy units (full battery)
+  capacity_hetero: 0.15
+  move_energy_per_m: 0.02  # energy units per metre flown (nominal)
+  hover_energy_per_s: 0.02
+  service_energy_per_s: 0.1
+  charge_rate: 0.5         # energy units per s while CHARGING
+  payload_capacity: 10.0
+  task_payload_range: [0.0, 4.0]
+  initial_task_frac: 0.4   # fraction of tasks present at t=0
+  arrival_window_frac: 0.6 # remaining tasks arrive uniformly in the first frac*horizon steps
+  service_range: [8.0, 25.0]
+  deadline_slack_range: [60.0, 150.0]   # s after arrival+service, multiplied by deadline_tightness
+  deadline_tightness: 1.0
+  priority_weights: [0.3, 0.25, 0.2, 0.15, 0.1]  # P(priority = 1..5)
+  hard_deadlines: true
+  wind_std: 2.0            # m/s, stationary std of each wind component (OU process)
+  wind_tau: 60.0           # s, OU correlation time
+  failure_rate: 0.0        # per-UAV per-step random fault probability
+  no_fly_zones: []         # list of [x, y, radius]
+  arrival_uncertainty: 0.1
+  redecide_period: 5       # steps between policy re-queries of UAVs that already hold a claim
+comm:
+  range: 400.0
+  loss_prob: 0.05
+  delay_min: 0             # extra delay in steps (every message has >=1 step latency)
+  delay_max: 2
+  outage_prob: 0.002       # per-UAV-step probability that radio goes down
+  outage_min: 5
+  outage_max: 20
+  partition_prob: 0.0      # per-episode probability of a network partition event
+  partition_duration: 40
+  heartbeat_period: 2
+  neighbor_timeout: 10
+  command_loss: 0.05       # loss prob of ground->UAV command link (centralized baselines + task announce)
+  heartbeat_bytes: 48
+  claim_bytes: 40
+safety:
+  reserve_frac: 0.15
+  energy_margin: 0.10
+  time_margin: 0.15
+  energy_filter: true      # ablation switch (simulation only!)
+  emergency_policy: land_in_place   # or continue_to_base
+coordination:
+  enabled: true            # ablation switch
+  confirm_window: 3        # steps a provisional claim must survive before it is CONFIRMED
+  lease_duration: 12       # steps
+  renew_period: 4
+reward:
+  w_c: 1.0                 # per mean-task-value completed
+  w_e: 0.5                 # per full battery of energy
+  w_t: 2.0                 # total over an episode if tasks are open the whole time
+  w_l: 0.5                 # per mean-task-value expired
+  w_s: 0.1                 # per task switch
+  w_d: 0.5                 # per duplicate assignment
+  w_q: 0.002               # per kB per UAV per step
+model:
+  actor_type: gnn          # gnn | mlp
+  aggregation: attention   # attention | mean
+  recurrent: false
+  hidden: 128
+  layers: 2
+  heads: 4
+  max_uav_nodes: 6         # ego + up to 5 known neighbours
+  max_task_nodes: 12

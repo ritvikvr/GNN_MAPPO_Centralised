@@ -1,0 +1,19 @@
+# Evaluation / comparison config
+env:
+  n_uavs: 20
+  n_tasks: 80
+  horizon: 300
+eval:
+  n_episodes: 10
+  methods: [nearest, greedy, hungarian, local_greedy, gnn_mappo]
+  checkpoint: checkpoints/best.pt
+  fleet_sizes: [10, 20, 30, 50]
+  tasks_per_uav: 2.5
+  out_dir: results
+  conditions:
+    reliable:
+      comm: {loss_prob: 0.0, delay_max: 0, outage_prob: 0.0, partition_prob: 0.0, command_loss: 0.0}
+    degraded:
+      comm: {loss_prob: 0.3, delay_min: 1, delay_max: 4, outage_prob: 0.01, partition_prob: 0.5, range: 300.0, command_loss: 0.3}
+    uav_failures:
+      env: {failure_rate: 0.002}

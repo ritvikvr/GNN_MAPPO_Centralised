@@ -1,0 +1,11 @@
+# Degraded-communication preset (merge on top of default.yaml)
+comm:
+  loss_prob: 0.30
+  delay_min: 1
+  delay_max: 4
+  outage_prob: 0.01
+  outage_min: 10
+  outage_max: 40
+  partition_prob: 0.5
+  range: 300.0
+  command_loss: 0.30
